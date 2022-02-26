@@ -3,4 +3,12 @@
 body {
     background-color: $palette3;
     font-family: 'Roboto', sans-serif;
+
+    h1 {
+        font-weight: bold;
+        font-size: larger;
+        font-size: 1.5em;
+        color: $palette2;
+        padding: 1.25rem;
+    }
 }
