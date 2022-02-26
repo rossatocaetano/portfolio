@@ -7,3 +7,9 @@ export interface IBusinessCard {
     items: string[];
     vertical: boolean;
 }
+
+export interface IProjects {
+    links: string[],
+    images: string[],
+    descriptions: Array<string[]>;
+}

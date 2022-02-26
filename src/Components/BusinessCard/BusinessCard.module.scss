@@ -85,3 +85,18 @@
     }
 }
 
+@media (width > $layout-breakpoint-large) {
+
+    .container {
+        height: 100%;
+        
+        .businesscard {
+            max-width: 50vw;
+            max-height: 50vh;
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+    
+}

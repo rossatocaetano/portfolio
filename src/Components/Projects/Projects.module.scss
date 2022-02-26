@@ -1,0 +1,40 @@
+@import '../../assets/base';
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+
+    .containerCard {
+        width: 100%;        
+        height: fit-content;
+        padding: 0;        
+        text-align: center;
+        
+    }
+    .containerCard a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+}
+
+@media (width > $layout-breakpoint-small) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media (width > $layout-breakpoint-large) {
+    .container {
+        padding-left: 20%;
+        padding-right: 20%;
+
+        .containerCard {
+            margin: .7rem;
+        }
+    }
+}
