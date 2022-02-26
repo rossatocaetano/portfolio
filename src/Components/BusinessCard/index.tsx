@@ -2,10 +2,18 @@ import style from './BusinessCard.module.scss';
 import {IBusinessCard} from '../../types/menu';
 
 const BusinessCard = (props:IBusinessCard) => {
+    const verticalParameter: boolean = props.vertical;
+
+    const vertical = (verticalParameter: boolean) => {
+        if (verticalParameter) {
+            return [style.businesscard, style.businesscardVertical].join(' ');
+        } else {
+            return style.businesscard;
+        }};
 
     return (    
         <div className={style.container}>
-            <div className={style.businesscard}>
+            <div className={ vertical(verticalParameter) }>
                 <img className={style.image} alt='logo' src={props.image} />
                 
                 <ul className={style.information}>

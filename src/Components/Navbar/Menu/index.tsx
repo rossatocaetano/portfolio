@@ -11,8 +11,7 @@ const Menu = (props: IMenu) => {
                         {link}
                     </li>)
             })}
-        </ul>
-        
+        </ul>    
     )
 }
 

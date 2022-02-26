@@ -5,4 +5,5 @@ export interface IMenu {
 export interface IBusinessCard {
     image: string,
     items: string[];
+    vertical: boolean;
 }

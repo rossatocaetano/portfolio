@@ -3,14 +3,15 @@
 .container{
     display: flex;
     width: 100%;
-    height: 20vh;
-    padding: 2rem 0;
+    height: fit-content;
+    padding: 1rem 0;
     align-items: center;
     justify-content: center;
 
     .businesscard {
         /* glassmorphism*/
-        background: rgba( 54, 58, 64, 0.65 );
+        background-image: linear-gradient(to bottom right, rgba( 54, 58, 64, 0.15) 10%, rgba( 54, 58, 64, 0.75) 70%, rgba( 54, 58, 64, 0.95)  );
+        //background: rgba( 54, 58, 64, 0.65 );
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 5px );
         -webkit-backdrop-filter: blur( 5px );
@@ -22,10 +23,20 @@
         justify-content: space-evenly;
         flex-direction: row;
         width: 80%;
-        max-width: 500px;
+        max-width: 400px;
         height: fit-content;
         padding: 1rem;
         color: $palette3;
+
+        &Vertical {
+            flex-direction: column;
+            
+            & ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
 
         .image {    
             height: 6rem;
@@ -45,14 +56,23 @@
                 display: flex;
                 flex-wrap: wrap;
                 word-wrap: break-word;
-
+                font-style: italic;
+                
                 & a {
                     text-decoration: none;
                     color: inherit;
                     word-wrap: break-word;
                     
                 }
-            }     
+            }    
+            
+            & li:first-child {
+                font-size: 1.5em;
+                font-weight: bold;
+                font-style:normal;
+               
+            }
+            
         }
     }
     
@@ -61,5 +81,7 @@
 @media (width < $layout-breakpoint-extra-small) {
     .information {
         font-size: .7rem;
+
     }
 }
+
