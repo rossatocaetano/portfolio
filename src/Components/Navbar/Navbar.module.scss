@@ -1,0 +1,28 @@
+@import '../../assets/base';
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $palette2;
+    height: fit-content;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media (width > $layout-breakpoint-small) {
+    .navbar {
+        flex-direction: row;
+        padding: 1.75rem;
+
+        .logoBox {
+            display: flex;
+        }
+    }
+}
+
+@media (width > $layout-breakpoint-medium) {
+    .navbar {
+        padding: 2rem;
+    }
+}
