@@ -1,16 +1,17 @@
-import React from 'react';
-import logo from './assets/logo.svg';
 import './App.scss';
 import Navbar from './Components/Navbar';
-import { isPropertySignature } from 'typescript';
 import BusinessCard from './Components/BusinessCard';
+import image from './assets/BusinessCard.png'
 
 function App() {
+  const navBarTitles: string[] = ['Business Card', 'Projects', 'Public Policy Manager', 'Contact Me'];  
+  const personalInformation:string[] = ['Raphael Rossato Caetano', '27 years old', 'Based in São Paulo', 'Web developer and public policy manager', 'Actually work at FAB LAB LIVRE SP', 'rossato.caetano@gmail.com']
+  
   return (
     <>
-      <Navbar links={['Business Card', 'Projects', 'Public Policy Manager', 'Contact Me']}></Navbar>
+      <Navbar links={navBarTitles}></Navbar>
       <h1>BUSINESS CARD</h1>
-      <BusinessCard></BusinessCard>    
+      <BusinessCard items={personalInformation} image={image}></BusinessCard>
     </>
   );
 }
