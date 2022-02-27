@@ -1,16 +1,16 @@
 import style from './App.module.scss';
-import Navbar from './Components/Navbar';
-import BusinessCard from './Components/BusinessCard';
-import image from './assets/BusinessCard.png'
-import lottery from './assets/images/projects/lottery.png'
-import courseList from './assets/images/projects/courselist.png'
-import flaskIcon from './assets/images/projects/flask.svg'
-import Projects from './Components/Projects';
-import VideosComponent from './Components/VideosComponent';
-import ContactMe from './Components/ContactMe';
-import linkedin from './assets/images/contactme/linkedin.svg';
-import github from './assets/images/contactme/github.svg';
-import mail from './assets/images/contactme/mail.svg';
+import Navbar from '../Components/Navbar';
+import BusinessCard from '../Components/BusinessCard';
+import image from '../assets/BusinessCard.png'
+import lottery from '../assets/images/projects/lottery.png'
+import courseList from '../assets/images/projects/courselist.png'
+import flaskIcon from '../assets/images/projects/flask.svg'
+import Projects from '../Components/Projects';
+import VideosComponent from '../Components/VideosComponent';
+import ContactMe from '../Components/ContactMe';
+import linkedin from '../assets/images/contactme/linkedin.svg';
+import github from '../assets/images/contactme/github.svg';
+import mail from '../assets/images/contactme/mail.svg';
 
 function App() {
   const navBarTitles: string[] = ['Business Card', 'Projects', 'Public Policy Manager', 'Contact Me'];
