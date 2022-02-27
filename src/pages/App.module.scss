@@ -10,29 +10,4 @@ body {
         color: $palette2;
         padding: 1rem;        
     }
-    footer {
-        background-color: $palette4;
-    }
-    
-}
-
-@media (width > $layout-breakpoint-large) {
-    .cardcontainer {
-        width: 40%;
-        height: 35%;
-        margin: auto;        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.25rem;        
-        img{
-            height: 15rem;
-        }
-    }
-}
-
-@media (width > $layout-breakpoint-extra-large) {
-    .cardcontainer {
-        width: 35%;        
-    }
 }
