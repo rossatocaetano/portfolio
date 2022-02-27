@@ -6,6 +6,7 @@ import lottery from './assets/images/projects/lottery.png'
 import courseList from './assets/images/projects/courselist.png'
 import flaskIcon from './assets/images/projects/flask.svg'
 import Projects from './Components/Projects';
+import VideosComponent from './Components/VideosComponent';
 
 function App() {
   const navBarTitles: string[] = ['Business Card', 'Projects', 'Public Policy Manager', 'Contact Me'];  
@@ -22,6 +23,11 @@ function App() {
   //Projects Images
   const images:string[] = [lottery, courseList, flaskIcon]
 
+  //Videos
+  const videos:string[] = ['https://www.youtube.com/embed/FOuonKpGK_c', 'https://www.youtube.com/embed/ONi404GH4sM?start=1983', 'https://www.youtube.com/embed/ulLE2_CgArc?start=1983', 'https://www.youtube.com/embed/Arwyghnf0b4']
+  const titles:string[] = ['TV BRASIL Interview', '4th WeGo Awards - Winner at Open and Inclusive City', 'Campus Party Brasil - Printing Houses and Fab Labs', 'Brincando com Ideias - Meet the Fab Labs']
+
+ 
   //Projects
 
   return (
@@ -33,6 +39,8 @@ function App() {
       </div>      
       <h1>PROJECTS</h1>
       <Projects links={links} images={images} descriptions={[lotteryInformation, courseListInformation, registrationApiInformation]}></Projects>
+      <h1>PUBLIC POLICY MANAGER</h1>
+      <VideosComponent videos={videos} titles={titles}></VideosComponent>
     </>
   );
 }

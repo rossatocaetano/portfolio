@@ -4,12 +4,17 @@ export interface IMenu {
 
 export interface IBusinessCard {
     image: string,
-    items: string[];
-    vertical: boolean;
+    items: string[],
+    vertical: boolean,
 }
 
 export interface IProjects {
     links: string[],
     images: string[],
-    descriptions: Array<string[]>;
+    descriptions: Array<string[]>,
+}
+
+export interface IVideosComponent{
+    videos: string[],
+    titles: string[]
 }
