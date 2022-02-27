@@ -7,7 +7,6 @@
     padding: 1rem 0;
     align-items: center;
     justify-content: center;
-
     .businesscard {
         /* glassmorphism*/
         background-image: linear-gradient(to bottom right, rgba( 54, 58, 64, 0.15) 10%, rgba( 54, 58, 64, 0.75) 70%, rgba( 54, 58, 64, 0.95)  );
@@ -27,76 +26,83 @@
         height: fit-content;
         padding: 1rem;
         color: $palette3;
-
         &Vertical {
-            flex-direction: column;
-            
+            flex-direction: column;   
             & ul {
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: center;   
             }
         }
-
         .image {    
             height: 6rem;
-            margin-right: 1em;;
+            margin-right: 1em;
         }
-
         .information {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             max-width: fit-content;
             flex-wrap: wrap;
-            padding-right: .7rem;
-            
+            padding-right: .7rem;            
             & li {
                 padding: .2rem 0;
                 display: flex;
                 flex-wrap: wrap;
                 word-wrap: break-word;
-                font-style: italic;
-                
-                & a {
-                    text-decoration: none;
-                    color: inherit;
-                    word-wrap: break-word;
-                    
-                }
-            }    
-            
+                font-style: italic;                    
+                }   
             & li:first-child {
                 font-size: 1.5em;
+                color: $palette2;
                 font-weight: bold;
-                font-style:normal;
-               
-            }
-            
+                font-style:normal;   
+            }            
         }
     }
-    
 }
 
 @media (width < $layout-breakpoint-extra-small) {
     .information {
         font-size: .7rem;
-
     }
 }
 
 @media (width > $layout-breakpoint-large) {
-
     .container {
-        height: 100%;
-        
+        height: 100%;       
         .businesscard {
-            max-width: 50vw;
-            max-height: 50vh;
-            height: 100%;
+            max-width: 70vw;
+            max-height: 60vh;            
             width: 100%;
+            .image{
+                height: 8.5rem;
+            }
+            .information {                           
+                & li {
+                    font-size: 1rem;                
+                    }   
+                & li:first-child {
+                    font-size: 1.5rem;                    
+                }
+             }
         }
+    }    
+}
 
-    }
-    
+@media (width > $layout-breakpoint-extra-large) {
+    .container {
+        height: 100%;       
+        .businesscard {
+
+            .information {                           
+                & li {
+                    font-size: 1.3rem;                
+                    }   
+                & li:first-child {
+                    font-size: 1.8rem;                    
+                }
+             }
+        }
+    }    
 }
