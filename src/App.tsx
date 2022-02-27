@@ -13,7 +13,9 @@ import github from './assets/images/contactme/github.svg';
 import mail from './assets/images/contactme/mail.svg';
 
 function App() {
-  const navBarTitles: string[] = ['Business Card', 'Projects', 'Public Policy Manager', 'Contact Me'];  
+  const navBarTitles: string[] = ['Business Card', 'Projects', 'Public Policy Manager', 'Contact Me'];
+  const navBarLink: string[] = ['#business_card', '#projects', '#public_policy_manager', '#contact_me']
+
   const personalInformation:string[] = ['Raphael Rossato Caetano', '27 years old', 'Based in São Paulo', 'Web developer and public policy manager', 'Actually work at FAB LAB LIVRE SP', 'rossato.caetano@gmail.com'];
 
   //Projets Descriptions
@@ -40,17 +42,17 @@ function App() {
 
   return (
     <>
-      <Navbar links={navBarTitles}></Navbar>
-      <h1>BUSINESS CARD</h1>
+      <Navbar titles={navBarTitles} links={navBarLink}></Navbar>
+      <h1 id="business_card">BUSINESS CARD</h1>
       <div className={style.cardcontainer}>
         <BusinessCard items={personalInformation} image={image} vertical={false}></BusinessCard>
       </div>      
-      <h1>PROJECTS</h1>
+      <h1 id="projects">PROJECTS</h1>
       <Projects links={links} images={images} descriptions={[lotteryInformation, courseListInformation, registrationApiInformation]}></Projects>
-      <h1>PUBLIC POLICY MANAGER</h1>
+      <h1 id ="public_policy_manager">PUBLIC POLICY MANAGER</h1>
       <VideosComponent videos={videos} titles={titles}></VideosComponent>
       <footer>
-        <h1>CONTACT ME</h1>
+        <h1 id = "contact_me">CONTACT ME</h1>
         <ContactMe icons={icons} alts={alts} title={contactMeTitle} links={linkIcons}></ContactMe>
       </footer>
     </>

@@ -1,5 +1,6 @@
 export interface IMenu {
-    links: string[]
+    titles: string[],
+    links: string[],
 }
 
 export interface IBusinessCard {
