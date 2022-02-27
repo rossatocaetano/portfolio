@@ -7,6 +7,10 @@ import courseList from './assets/images/projects/courselist.png'
 import flaskIcon from './assets/images/projects/flask.svg'
 import Projects from './Components/Projects';
 import VideosComponent from './Components/VideosComponent';
+import ContactMe from './Components/ContactMe';
+import linkedin from './assets/images/contactme/linkedin.svg';
+import github from './assets/images/contactme/github.svg';
+import mail from './assets/images/contactme/mail.svg';
 
 function App() {
   const navBarTitles: string[] = ['Business Card', 'Projects', 'Public Policy Manager', 'Contact Me'];  
@@ -28,7 +32,11 @@ function App() {
   const titles:string[] = ['TV BRASIL Interview', '4th WeGo Awards - Winner at Open and Inclusive City', 'Campus Party Brasil - Printing Houses and Fab Labs', 'Brincando com Ideias - Meet the Fab Labs']
 
  
-  //Projects
+//Contact Me
+  const icons = [github, mail, linkedin];
+  const alts = ['Github', 'E-mail', 'Linkedin'];
+  const contactMeTitle = 'Contact Me';
+  const linkIcons: string[] = ['https://github.com/rossatocaetano', 'mailto:rossato.caetano@gmail.com', 'https://www.linkedin.com/in/rossato-caetano/']
 
   return (
     <>
@@ -41,6 +49,10 @@ function App() {
       <Projects links={links} images={images} descriptions={[lotteryInformation, courseListInformation, registrationApiInformation]}></Projects>
       <h1>PUBLIC POLICY MANAGER</h1>
       <VideosComponent videos={videos} titles={titles}></VideosComponent>
+      <footer>
+        <h1>CONTACT ME</h1>
+        <ContactMe icons={icons} alts={alts} title={contactMeTitle} links={linkIcons}></ContactMe>
+      </footer>
     </>
   );
 }

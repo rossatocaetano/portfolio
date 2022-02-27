@@ -18,3 +18,10 @@ export interface IVideosComponent{
     videos: string[],
     titles: string[]
 }
+
+export interface IContactMe {
+    icons: string[],
+    alts: string[],
+    title: string,
+    links: string[]
+}

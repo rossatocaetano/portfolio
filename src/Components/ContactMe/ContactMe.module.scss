@@ -1,0 +1,39 @@
+@import '../../assets/base';
+
+*{
+    box-sizing: border-box;
+    .iconsBackground{
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .iconsContainer{
+            height: fit-content;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 .75rem;
+            
+            
+            .icons {
+                display: flex;
+                width: 3rem;
+                height:3rem;
+            }
+        }
+    }
+} 
+    
+@media (width>$layout-breakpoint-medium) {
+    .iconsBackground{        
+        .iconsContainer{            
+            .icons {                
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+}

@@ -3,7 +3,6 @@
 body {
     background-color: $palette3;
     font-family: 'Roboto', sans-serif;
-
     h1 {
         font-weight: bold;
         font-size: larger;
@@ -11,7 +10,9 @@ body {
         color: $palette2;
         padding: 1rem;        
     }
-
+    footer {
+        background-color: $palette4;
+    }
     
 }
 
