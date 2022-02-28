@@ -7,9 +7,8 @@ const BusinessCardPage = () => {
     const personalInformation:string[] = ['Raphael Rossato Caetano', '27 years old', 'Based in São Paulo', 'Web developer and public policy manager', 'Actually work at FAB LAB LIVRE SP', 'rossato.caetano@gmail.com'];
 
     return (
-        <div>
-            <h1 id="business_card">BUSINESS CARD</h1>
-            <div className={style.cardcontainer}>            
+        <div className={style.pageContainer}>
+            <div className={style.cardContainer}>  
                 <BusinessCard items={personalInformation} image={image} vertical={false}></BusinessCard>
             </div>
         </div>
