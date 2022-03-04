@@ -12,7 +12,6 @@ const BusinessCard = (props:IBusinessCard) => {
         }};
 
     return (    
-        <div className={style.container}>
             <div className={ vertical(verticalParameter) }>
                 <img className={style.image} alt='logo' src={props.image} />
                 
@@ -24,7 +23,7 @@ const BusinessCard = (props:IBusinessCard) => {
                     })}                    
                 </ul>
             </div>            
-        </div>
+        
     )
 }
 

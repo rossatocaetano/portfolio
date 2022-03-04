@@ -15,16 +15,7 @@
         justify-content: center;
         flex-direction: row;
         padding: 1rem;
-        color: $palette3;
-        
-        &Vertical {
-            flex-direction: column;   
-            & ul {
-                display: flex;
-                align-items: center;
-                justify-content: center;   
-            }
-        }
+        color: $palette3;    
         .image {    
             height: 6rem;
             margin-right: 1em;
@@ -48,6 +39,20 @@
                 font-style:normal;   
             }            
         }
+        &Vertical {
+            flex-direction: column;            
+            & .image {              
+                margin-right: 0;
+                height: auto;
+                max-height: 7rem;
+                max-width: 100%;
+            }            
+            & ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
 
 @media (width < $layout-breakpoint-extra-small) {
@@ -57,20 +62,29 @@
 }
 
 @media (width > $layout-breakpoint-small) {
-    .information {
-        margin: 2rem;
-        & li{
-            margin: .3rem;
-            
+    .businesscard {
+        .information {
+            margin: 2rem;
+            & li{
+                margin: .3rem;                
+            }
         }
-    }
+    }    
 }
 
 @media (width > $layout-breakpoint-large) {      
         .businesscard {
             .image {
-                height: 12rem;
+                height: 10rem;
             }
+            &Vertical {
+               & .image {
+                   max-width: 100%;
+                   max-height: 12rem;
+                   margin: 0 auto;
+               }   
+            }
+            
             .information {                           
                 & li {
                     font-size: 1rem;                

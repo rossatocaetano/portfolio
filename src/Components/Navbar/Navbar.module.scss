@@ -10,7 +10,7 @@
     flex-wrap: wrap;
 }
 
-@media (width > $layout-breakpoint-small) {
+@media (width > 635px) { // 635px is the breakpoint to fit all the content in the row direction of the navbar
     .navbar {
         flex-direction: row;
         padding: 1.75rem;

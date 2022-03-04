@@ -22,15 +22,14 @@
             &:visited {
                 color: inherit;
             }
-        }
-        
+        }    
     }
     &__list:last-child {
         border-right-width: 0px;
     }  
 }
 
-@media (width > $layout-breakpoint-small) {
+@media (width > 635px) {
     .menu__list {
         border: none;
         margin: .3em;

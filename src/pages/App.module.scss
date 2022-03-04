@@ -8,6 +8,46 @@ body {
         font-size: larger;
         font-size: 1.5em;
         color: $palette2;
-        padding: 1rem;        
+        padding: 1rem 0;        
+    }
+    p {
+        padding-bottom: 1rem;
+    }    
+}
+
+.app {    
+    .navbar {
+        height: 168px;
+        width: 100%;
+        float:inline-start;
+        z-index: 10;
+        box-sizing: border-box;        
+    }
+    .content {
+        float:inline-start;
+        max-height: calc(100vh - 168px);
+        overflow: scroll;
+        } 
+}
+
+@media (width >  635px) {
+    .app{
+        .navbar{
+            height: 156px;
+        }
+        .content{
+            max-height: calc(100vh - 156px);
+        }
+    }
+}
+
+@media (width >  $layout-breakpoint-medium) {
+    .app{
+        .navbar{
+            height: 164px;
+        }
+        .content{
+            max-height: calc(100vh - 164px);
+        }
     }
 }

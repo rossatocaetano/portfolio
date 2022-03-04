@@ -9,32 +9,44 @@
     justify-content: center;
 
     .containerCard {
-        width: 100%;        
-        height: fit-content;
+        width: 80%;        
+        height: 100%;
         padding: 0;        
         text-align: center;
-        
+        margin-bottom: 1rem;        
     }
     .containerCard a {
         text-decoration: none;
         cursor: pointer;
-    }
-    
+    }    
 }
 
 @media (width > $layout-breakpoint-small) {
     .container {
         flex-direction: row;
+        justify-content: space-around;
+        padding: 0 3%;
+        & .containerCard{
+            width: 30%;
+        }
     }
 }
 
 @media (width > $layout-breakpoint-large) {
     .container {
-        padding-left: 20%;
-        padding-right: 20%;
-
+        padding-left: 10%;
+        padding-right: 10%;
         .containerCard {
             margin: .7rem;
+            width: 33%;    
+        }
+    }
+}
+
+@media (width > $layout-breakpoint-extra-large) {
+    .container {
+        .containerCard {
+            width: 33%;
         }
     }
 }

@@ -3,7 +3,6 @@ import Menu from './Menu/index'
 import {IMenu} from '../../types/menu';
 import style from './Navbar.module.scss'
 import logo from '../../assets/logo.png'
-import { isPropertyAccessOrQualifiedName } from 'typescript';
 
 const Navbar = (props: IMenu) => {
     return (
