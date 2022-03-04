@@ -12,7 +12,7 @@ const ContactMePage = () => {
     const linkIcons: string[] = ['https://github.com/rossatocaetano', 'mailto:rossato.caetano@gmail.com', 'https://www.linkedin.com/in/rossato-caetano/']
 
     return (
-    <footer className={style.container}>
+    <footer className={style.pageContainer}>
         <h1 id = "contact_me">CONTACT ME</h1>
         <ContactMe icons={icons} alts={alts} title={contactMeTitle} links={linkIcons}></ContactMe>
       </footer>
