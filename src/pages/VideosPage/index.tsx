@@ -7,8 +7,9 @@ const VideosPage = () => {
     const titles:string[] = ['TV BRASIL Interview', '4th WeGo Awards - Winner at Open and Inclusive City', 'Campus Party Brasil - Printing Houses and Fab Labs', 'Brincando com Ideias - Meet the Fab Labs']
     
     return (
-        <div>
+        <div className={style.pageContainer}>            
             <h1 id ="public_policy_manager">PUBLIC POLICY MANAGER</h1>
+            <p>Here some videos of interviews, awards and talks there I made in my job as public policy manager at the FAB LAB LIVRE SP network, a program from São Paulo city hall</p>
             <VideosComponent videos={videos} titles={titles}></VideosComponent>
         </div>
         

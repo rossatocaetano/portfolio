@@ -1,0 +1,8 @@
+.pageContainer{
+    min-height: calc(100vh - 168px + 2rem);
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
