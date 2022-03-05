@@ -14,13 +14,13 @@
         width: 25%;
         height: 4rem;
         border-right: 1px solid $palette3;
-        color: $palette3;
         padding: .3rem;
         a {
             text-decoration: none;
+            color: $palette3;
 
             &:visited {
-                color: inherit;
+                color: $palette3;
             }
         }    
     }
