@@ -1,0 +1,45 @@
+.pageContainer{
+    .ball1 {
+        position:absolute;        
+        height: 5rem;
+        width: 5rem;
+        top: 4rem;
+        left: -2rem;        
+        border-radius: 15%;
+        background-color:  rgba(17, 184, 198, .85);
+        box-shadow:
+            0 0 10px 10px rgba(17, 184, 198, .75),
+            0 0 30px 20px rgba(17, 184, 198, .5),
+            0 0 60px 40px rgba(17, 184, 198, .25);
+        z-index: 2;
+    }
+
+    .ball2 {
+        position:absolute;        
+        height: 5rem;
+        width: 5rem;
+        top: 49%;
+        right:-1rem;
+        border-radius: 15%;
+        background-color: rgba(197, 232, 246, 1);
+        box-shadow:
+            0 0 15px 30px rgba(197, 232, 246, .75),
+            0 0 40px 40px rgba(197, 232, 246, .5),
+            0 0 75px 70px rgba(197, 232, 246, .25);
+    }
+
+    .ball3 {
+        position:absolute;        
+        height: 5rem;
+        width: 5rem;
+        top: 95%;
+        left: 15%;
+        border-radius: 35%;
+        background-color: rgba(85, 114, 166, 1);
+        box-shadow:
+            0 0 30px 30px rgba(85, 114, 166, .75),
+            0 0 60px 70px rgba(85, 114, 166, .5),
+            0 0 120px 140px rgba(85, 114, 166, .25);
+        z-index: 2;
+        }
+    }

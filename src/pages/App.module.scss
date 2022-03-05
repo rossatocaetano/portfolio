@@ -1,33 +1,37 @@
 @import '../assets/styles/base';
 
 body {
-    background-color: $palette3;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: $palette2;
     h1 {
         font-weight: bold;
         font-size: larger;
         font-size: 1.5em;
-        color: $palette2;
         padding: 1rem 0;        
     }
     p {
         padding-bottom: 1rem;
-    }    
+    }
 }
 
-.app {    
-    .navbar {
-        height: 168px;
+
+.app{    
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    .navbar{
+        height: 167px;
         width: 100%;
-        float:inline-start;
-        z-index: 10;
-        box-sizing: border-box;        
+        position: fixed;
+        z-index: 1000;
+        opacity: .95;
     }
-    .content {
-        float:inline-start;
-        max-height: calc(100vh - 168px);
+    .content{
+        margin-top: 167px;
         overflow: scroll;
-        } 
+    }
 }
 
 @media (width >  635px) {
@@ -37,6 +41,7 @@ body {
         }
         .content{
             max-height: calc(100vh - 156px);
+            margin-top: 156px;
         }
     }
 }
@@ -48,6 +53,8 @@ body {
         }
         .content{
             max-height: calc(100vh - 164px);
+            margin-top: 164px;
         }
+        
     }
 }

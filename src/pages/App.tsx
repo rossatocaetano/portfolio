@@ -5,6 +5,7 @@ import NavbarPage from './NavbarPage';
 import ProjectsPage from './ProjectsPage';
 import VideosPage from './VideosPage';
 import style from './App.module.scss'
+import BackgroundLights from '../Components/BackgroundLights';
 
 let navbar = document.getElementById('teste');
 if (navbar) {

@@ -34,23 +34,27 @@
                 }   
             & li:first-child {
                 font-size: 1.5em;
-                color: $palette2;
+                color: $palette4;
                 font-weight: bold;
                 font-style:normal;   
             }            
         }
         &Vertical {
-            flex-direction: column;            
+            flex-direction: column;          
             & .image {              
                 margin-right: 0;
                 height: auto;
                 max-height: 7rem;
                 max-width: 100%;
             }            
-            & ul {
+            & .information {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                & li:first-child {
+                    color: $palette2;
+                }
             }
         }
     }

@@ -1,10 +1,21 @@
 @import '../../assets/styles/base';
 
+.hidden{ 
+    position: absolute;
+    top: -126px;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
 .pageContainer {
     height: calc(100vh - 168px);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    background-color: $palette2;
+    overflow: hidden;    
     
     .cardContainer {
         width:70%;
@@ -12,10 +23,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 100;
     }
+
+    
+
+    
 }
 
 @media (width > $layout-breakpoint-large) {
+
+    .hidden {
+        top: 0;
+    }
     .cardContainer {
         font-size: 1.25rem;        
         img{
