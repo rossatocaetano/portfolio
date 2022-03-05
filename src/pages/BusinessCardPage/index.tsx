@@ -9,7 +9,7 @@ const BusinessCardPage = () => {
 
     return (
         <>
-        <div id="business_card" className={style.hidden}></div>
+        <div className={style.hidden}></div>
         <div className={style.pageContainer}>  
                   
             <div className={style.cardContainer}>  

@@ -4,7 +4,7 @@ import style from './NavbarPage.module.scss';
 
 const NavbarPage = () => {
     const navBarTitles: string[] = ['Business Card', 'Projects', 'Public Policy Manager', 'Contact Me'];
-    const navBarLink: string[] = ['#business_card', '#projects', '#public_policy_manager', '#contact_me']
+    const navBarLink: string[] = ['#top', '#projects', '#public_policy_manager', '#contact_me']
     
     return (
         <header className={style.nav}>

@@ -19,7 +19,8 @@ function App() {
       <div className={style.navbar}>    
         <NavbarPage></NavbarPage>
       </div>
-      <div className={style.content}>        
+      <div className={style.content}>
+        <div id="top"></div>     
         <BusinessCardPage></BusinessCardPage>
         <ProjectsPage></ProjectsPage>
         <VideosPage></VideosPage>
