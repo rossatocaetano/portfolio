@@ -1,16 +1,18 @@
 @import '../../assets/styles/base';
 
 .pageContainer {
+    align-self: flex-start;
+    width: 100vw;
     min-height: calc(100vh - 168px + 2rem);
     padding: 2rem 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: column;
     background-color: $palette3;
     z-index: 100;
     & h1 {
-        padding-top: 167px;
+        
         color: $palette2;
     }
 
@@ -21,22 +23,15 @@
     }
 }
 
-@media (width > 635px) {
-    .pageContainer{
-        & h1{
-            padding-top: 0;
-        }
-    }
-}
 
 @media (width > $layout-breakpoint-large) {
     .pageContainer{
-        & h1{
+        & h1 {
             font-size: 2.5rem;
         }
         & p{
             font-size:1.5rem;
-            padding: 2rem 15rem;
+            padding: 2rem 15rem 4rem;
         }
     }
 }

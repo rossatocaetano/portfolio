@@ -10,7 +10,6 @@
     background-color: $palette5;
     & h1 {
         color: $palette4;
-        padding-top: 167px;
     }
     & p {
         color: $palette3;
@@ -20,13 +19,6 @@
     }     
 }
 
-@media (width > 635px) {
-    .pageContainer{
-        & h1{
-            padding-top: 0;
-        }
-    }
-}
 
 @media (width > $layout-breakpoint-large) {
     .pageContainer{

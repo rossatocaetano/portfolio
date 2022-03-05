@@ -29,6 +29,7 @@ body {
         opacity: .95;
     }
     .content{
+        max-height: calc(100vh - 167px);
         margin-top: 167px;
         overflow: scroll;
     }

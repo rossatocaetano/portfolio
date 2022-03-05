@@ -15,12 +15,12 @@ const ProjectsPage = () => {
     //Projects Images
     const images:string[] = [lottery, courseList, flaskIcon]
 
-    return  (
+    return  (    
         <div className={style.pageContainer}>
             <h1 id="projects">PROJECTS</h1>
             <p>Here is some projects there I made</p>
             <Projects links={links} images={images} descriptions={[lotteryInformation, courseListInformation, registrationApiInformation]}></Projects>
-        </div>
+        </div>    
     )
 
 }
