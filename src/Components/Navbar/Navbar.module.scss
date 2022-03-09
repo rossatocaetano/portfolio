@@ -5,13 +5,14 @@
     align-items: center;
     justify-content: space-between;
     background-color: $palette2;
-    height: fit-content;
+    height: 11rem;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
 @media (width > 635px) { // 635px is the breakpoint to fit all the content in the row direction of the navbar
     .navbar {
+        height: 10rem;
         flex-direction: row;
         padding: 1.75rem;
         .logoBox {
@@ -22,6 +23,8 @@
 
 @media (width > $layout-breakpoint-medium) {
     .navbar {
+        height: 10rem;
         padding: 2rem;
+        
     }
 }
