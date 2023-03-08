@@ -5,7 +5,7 @@ import image from '../../assets/BusinessCard.png'
 import BackgroundLights from '../../Components/BackgroundLights';
 
 const BusinessCardPage = () => {
-    const personalInformation:string[] = ['Raphael Rossato Caetano', '27 years old', 'Based in São Paulo', 'Web developer and public policy manager', 'Actually work at FAB LAB LIVRE SP', 'rossato.caetano@gmail.com'];
+    const personalInformation:string[] = ['Raphael Rossato Caetano', '28 years old', 'Based in São Paulo', 'Web developer and public policy manager', 'Actually work at FAB LAB LIVRE SP', 'rossato.caetano@gmail.com'];
 
     return (
         <>
