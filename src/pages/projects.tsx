@@ -1,12 +1,11 @@
 import React from 'react';
 import Projects from '../Components/Projects';
-import { Title } from '../styles/sharedstyles';
+import { Title, Container } from '../styles/sharedstyles';
 
 const ProjectsPage = () => {
     const lottery = '/images/projects/lottery.png';
     const courseList = '/images/projects/courselist.png';
     const flaskIcon = '/images/projects/flask.svg';
-
 
     const lotteryInformation:string[] = ['React Lottery','A front-end project to draw lottery numbers', 'React, typescript and Sass'];
     const courseListInformation:string[] = ['Course List', 'A front-end project to show course schedule', 'HTML, CSS and Javascript'];
@@ -18,11 +17,11 @@ const ProjectsPage = () => {
     const images:string[] = [lottery, courseList, flaskIcon]
 
     return  (    
-        <div id='projects'>
+        <Container>
             <Title id="projects">PROJECTS</Title>
             <p>Here is some projects there I made</p>
             <Projects links={links} images={images} descriptions={[lotteryInformation, courseListInformation, registrationApiInformation]}></Projects>
-        </div>    
+        </Container>    
     )
 
 }
